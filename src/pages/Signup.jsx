@@ -23,7 +23,7 @@ const Signup = () => {
       baseId: Number(form.baseId), // convert to number
     };
 
-    await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/register`, payload);
+    await axios.post(`${import.meta.env.VITE_API_URL}api/auth/register`, payload);
     navigate('/');
   } catch (err) {
     setError('Registration failed. Please check your info.');
